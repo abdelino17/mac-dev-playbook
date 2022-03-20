@@ -99,7 +99,6 @@ Applications (installed with Homebrew Cask):
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [VLC](https://www.videolan.org/vlc/)
 - [Zoom](https://www.zoom.us/)
-- [Zscaler](https://www.zscaler.fr/)
 
 Packages (installed with Homebrew):
 
