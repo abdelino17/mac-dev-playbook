@@ -1,0 +1,205 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove:
+  - Launchpad
+  - TV
+  - 'App Store'
+dockitems_persist: []
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: false
+sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/abdelino17/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .zshenv
+  - .gitignore
+  - .inputrc
+  - .osx
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - aliyun-cli
+  - asciinema
+  - autoconf
+  - autojump
+  - aws-elasticbeanstalk
+  - aws-iam-authenticator
+  - awscli
+  - azure-cli
+  - bash
+  - cfssl
+  - chart-testing
+  - composer
+  - cookiecutter
+  - copilot-cli
+  - cowsay
+  - curl
+  - cypher-shell
+  - dapr-cli
+  - deno
+  - dos2unix
+  - elixir
+  - erlang
+  - exa
+  - gd
+  - gdbm
+  - gettext
+  - gh
+  - git
+  - git-delta
+  - glab
+  - gmp
+  - gnupg
+  - gnuplot
+  - go
+  - go-swagger
+  - go-task
+  - graphite2
+  - graphviz
+  - grep
+  - groovy
+  - helm
+  - helmfile
+  - htop
+  - hub
+  - jq
+  - k9s
+  - kotlin
+  - kubectx
+  - kubernetes-cli
+  - lame
+  - macos-term-size
+  - maven
+  - mkcert
+  - mongosh
+  - mysql-client
+  - nghttp2
+  - node
+  - operator-sdk
+  - packer
+  - php
+  - protobuf
+  - pwgen
+  - python@3.10
+  - ripgrep
+  - ruby
+  - rust
+  - rustup-init
+  - snappy
+  - sops
+  - sqlite
+  - tfenv
+  - tfsec
+  - tidy-html5
+  - traefik
+  - tree
+  - vault
+  - wget
+  - yamllint
+  - yq
+  - zeromq
+  - zsh-completions
+  - aws-vault
+  - insomnia
+  - mysql-shell
+  - ngrok
+  - vagrant
+  - vagrant-manager
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+
+homebrew_cask_apps:
+  - chrome-driver
+  - docker
+  - firefox
+  - google-chrome
+  - macvim
+  - slack
+  - sublime-text
+  - vagrant
+  - iterm2
+  - discord
+  - jetbrains-toolbox
+  - loom
+  - microsoft-edge
+  - microsoft-teams
+  - microsoft-remote-desktop
+  - miniconda
+  - miro
+  - mongodb-compass
+  - notion
+  - oracle-jdk
+  - pgadmin4
+  - postman
+  - redisinsight
+  - spotify
+  - sqlitestudio
+  - sublime-text
+  - virtualbox
+  - vagrant-manager
+  - visual-studio-code
+  - vlc
+  - zoom
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - { id: 973130201, name: "Be Focused" }
+  - { id: 1091189122, name: "Bear" }
+  - { id: 585829637, name: "Todoist" }
+  - { id: 1278508951, name: "Trello" }
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+npm_packages:
+- name: "@aws-amplify/cli"
+- name: "@nestjs/cli"
+- name: "@types/node"
+- name: aws-cdk
+- name: npm
+- name: pnpm
+- name: serverless
+- name: ts-node
+- name: typescript
+- name: yarn
+
+pip_packages: 
+- name: cqlsh
+- name: pipenv
+- name: virtualenv
+- name: apache-airflow
+- name: Jinja2
+- name: jupyterlab
+- name: pandas
+- name: numpy
+- name: pip
+- name: alembic
+- name: boto3
+- name: requests
+- name: prometheus-client
+- name: ipython
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
